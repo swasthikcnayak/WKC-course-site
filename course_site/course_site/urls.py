@@ -1,10 +1,10 @@
 from django.contrib import admin
-from django.urls import path
 from course_site.course_site import settings
 from django.conf.urls.static import static
 from .views import index
 from django.urls import path, include
 import course_site.users.urls as users_url
+import course_site.courses.urls as course_url
 
 handler404 = 'course_site.course_site.views.handler404'
 handler500 = 'course_site.course_site.views.handler500'
@@ -19,6 +19,7 @@ urlpatterns = [
     path('grappelli/', include('grappelli.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('users/', include(users_url)),
+    path('courses/',include(course_url))
 ]
 
 

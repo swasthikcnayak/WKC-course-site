@@ -87,6 +87,7 @@ def profile(request):
     return render(request, 'profile/profile.html', context=context)
 
 
+@login_required
 def my_logout(request):
     logout(request)
     return redirect('index')
