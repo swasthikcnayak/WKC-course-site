@@ -1,5 +1,0 @@
-{
-  "SECRET_KEY": "test_key",
-  "MAIL_USER": "testemail",
-  "MAIL_PASS": "password"
-}

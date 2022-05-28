@@ -1,4 +1,4 @@
 venv
 .idea
 
-config.json
+course_site/course_site/config.json

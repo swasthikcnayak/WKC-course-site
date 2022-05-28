@@ -5,7 +5,7 @@ import json
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-with open(BASE_DIR /'config.json') as config_file:
+with open(BASE_DIR / 'course_site/course_site/config.json') as config_file:
     config = json.load(config_file)
 
 SECRET_KEY = config.get('SECRET_KEY')
@@ -176,5 +176,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config.get('MAIL_USER')
 EMAIL_HOST_PASSWORD = config.get('MAIL_PASS')
 
+LOGIN_REDIRECT_URL = 'profile'
+LOGIN_URL = 'login'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

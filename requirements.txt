@@ -6,3 +6,5 @@ django-crispy-forms==1.14.0
 django-grappelli==3.0.3
 django-js-asset==2.0.0
 sqlparse==0.4.2
+
+Pillow~=9.1.1
