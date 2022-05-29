@@ -26,6 +26,7 @@ class Chapters(models.Model):
 
 class Lecture(models.Model):
     lectureName = models.CharField(max_length=50, null=False, blank=False)
+    chapter = models.ForeignKey(Chapters,on_delete=models.CASCADE)
     description = models.TextField()
 
 
